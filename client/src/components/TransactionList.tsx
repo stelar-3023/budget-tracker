@@ -1,4 +1,4 @@
-transactioimport React from 'react';
+import React from 'react';
 import TransactionItem from './TransactionItem';
 
 const TransactionList = () => {
