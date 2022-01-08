@@ -1,5 +1,5 @@
-import React from 'react'
-import TransactionItem from './TransactionItem'
+transactioimport React from 'react';
+import TransactionItem from './TransactionItem';
 
 const TransactionList = () => {
   const transactions = [
@@ -9,12 +9,16 @@ const TransactionList = () => {
   ];
 
   return (
-    <ul className="list-group">
-      {transactions.map(transaction => (
-        <TransactionItem />
+    <ul className='list-group'>
+      {transactions.map((transaction) => (
+        <TransactionItem
+          id={transaction.id}
+          name={transaction.name}
+          amount={transaction.amount}
+        />
       ))}
     </ul>
-  )
-}
+  );
+};
 
 export default TransactionList;
